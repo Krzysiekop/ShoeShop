@@ -1,0 +1,143 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 14rem;
+    height: 10rem;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.nav__logo {
+    height: 2rem;
+}
+
+.nav__left {
+    display: flex;
+    gap: 5rem;
+}
+
+.nav__right_avatar {
+    width: 5.2rem;
+}
+
+.nav__right_cart {
+    fill: #69707d;
+    cursor: pointer;
+}
+
+.nav__right_cart:hover {
+    fill: black;
+}
+
+.nav__right_avatar:hover {
+    border-radius: 50%;
+    border: 3px solid hsl(26, 100%, 55%);
+}
+
+.nav__list li {
+    display: inline;
+    padding: 0 2rem;
+}
+
+.nav__list li:hover {
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+    padding-bottom: 3.6rem;
+}
+
+.nav__list a {
+    text-decoration: none;
+    color: grey;
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+}
+
+
+
+
+.cart {
+    position: absolute;
+    top: 5rem;
+    left: -10rem;
+    background-color: white;
+    z-index: 5;
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.cart__head {
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+.cart__inventory--empty {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.cart__inventory--full {
+    padding-top: 1rem;
+}
+
+.cart__quantity {
+    position: absolute;
+    font-size: 1.3rem;
+    top: 1rem;
+    left: 2rem;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    padding: 0 0.5rem;
+    border-radius: 50%;
+    display: block;
+}
+
+.cart__product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.cart__product--image {
+    width: 6rem;
+}
+
+.cart__checkout {
+    padding: 1rem 11rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.cart__checkout:hover {
+    opacity: 0.5;
+}
+
+.full__price {
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cart__delete {
+    cursor: pointer;
+}

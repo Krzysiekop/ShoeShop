@@ -1,0 +1,29 @@
+<div class="content__left">
+    <img
+      class="product__image"
+      [src]="bigImagePath"
+      srcset=""
+      (click)="showSlider(activeThumbnailNumber)"
+    />
+    <div class="product__thumbnails">
+      <img
+        class="product__thumbnail" [class.active]="activeThumbnailNumber === 1" (click)="activeThumbnailToggle(1)"
+        src="assets/images/image-product-1-thumbnail.jpg"
+      />
+      <img
+        class="product__thumbnail " [class.active]="activeThumbnailNumber === 2" (click)="activeThumbnailToggle(2)"
+        src="assets/images/image-product-2-thumbnail.jpg"
+      />
+      <img
+        class="product__thumbnail " [class.active]="activeThumbnailNumber === 3" (click)="activeThumbnailToggle(3)"
+        src="assets/images/image-product-3-thumbnail.jpg"
+      />
+      <img
+        class="product__thumbnail" [class.active]="activeThumbnailNumber === 4" (click)="activeThumbnailToggle(4)"
+        src="assets/images/image-product-4-thumbnail.jpg"
+      />
+    </div>
+  </div>
+
+
+

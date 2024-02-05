@@ -1,0 +1,9 @@
+main {
+    padding: 10rem 22rem;
+    height: 80vh;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

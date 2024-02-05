@@ -1,0 +1,35 @@
+
+<div class="slider" *ngIf="slider">
+    <img src="assets/images/icon-close.svg" class="slider__close" alt="close" (click)="closeSlider()" />
+    <img src="assets/images/icon-next.svg" class="slider__next" alt="next" (click)="showNextImage()" />
+    <img
+      src="assets/images/icon-previous.svg"
+      class="slider__previous"
+      alt="previous"
+      (click)="showPreviousImage()"
+    />
+    <img class="slider__image" [src]="bigImagePath" srcset="" />
+    <div class="slider__thumbnails">
+      <img
+        class="slider__thumbnail active"
+        src="assets/images/image-product-1-thumbnail.jpg"
+        [class.active]="activeThumbnailNumber === 1" (click)="activeThumbnailToggle(1)"
+      />
+      <img
+        class="slider__thumbnail"
+        src="assets/images/image-product-2-thumbnail.jpg"
+        [class.active]="activeThumbnailNumber === 2" (click)="activeThumbnailToggle(2)"
+      />
+      <img
+        class="slider__thumbnail"
+        src="assets/images/image-product-3-thumbnail.jpg"
+        [class.active]="activeThumbnailNumber === 3" (click)="activeThumbnailToggle(3)"
+      />
+      <img
+        class="slider__thumbnail"
+        src="assets/images/image-product-4-thumbnail.jpg"
+        [class.active]="activeThumbnailNumber === 4" (click)="activeThumbnailToggle(4)"
+      />
+    </div>
+  </div>
+  <div class="overlay" *ngIf="overlay"></div>
